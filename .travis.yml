@@ -1,12 +1,16 @@
-arch:
-  - amd64
-  - ppc64le
+jobs:
+include:
+  - arch: amd64
+  - arch: ppc64le
+    dist: xenial
+  - arch: ppc64le
+    dist: bionic
+  - arch: ppc64le
+    dist: focal
+   
   
 jdk:
-  - oraclejdk8
-  - oraclejdk11
-  - openjdk10
-  - openjdk11
+  - oraclejdk10
   
 sudo: required
 
