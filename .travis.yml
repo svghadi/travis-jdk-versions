@@ -8,5 +8,7 @@ jdk:
   - openjdk10
   - openjdk11
   
+sudo: required
+
 script:
-  - echo $JAVA_HOME
+  - sudo apt search adoptopenjdk
