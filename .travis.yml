@@ -8,10 +8,6 @@ include:
   - arch: ppc64le
     dist: focal
    
-  
-jdk:
-  - oraclejdk10
-  
 sudo: required
 
 script:
