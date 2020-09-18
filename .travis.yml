@@ -1,12 +1,12 @@
 jobs:
-include:
-  - arch: amd64
-  - arch: ppc64le
-    dist: xenial
-  - arch: ppc64le
-    dist: bionic
-  - arch: ppc64le
-    dist: focal
+  include:
+    - arch: amd64
+    - arch: ppc64le
+      dist: xenial
+    - arch: ppc64le
+      dist: bionic
+    - arch: ppc64le
+      dist: focal
    
 sudo: required
 
