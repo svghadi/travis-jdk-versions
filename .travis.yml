@@ -21,5 +21,5 @@ jobs:
 sudo: required
 
 script:
-  - sudo update
+  - sudo apt-get update -y
   - sudo apt-cache search adoptopenjdk
