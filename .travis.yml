@@ -8,6 +8,8 @@ langauge: java
 jdk:
   - openjdk8
   - openjdk15
+  - orcalejdk8
+  - orcalejdk11
   
 script:
   - sudo apt-get update -y
