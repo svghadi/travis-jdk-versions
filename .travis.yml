@@ -6,7 +6,7 @@ sudo: required
 langauge: java
 
 jdk:
-  - jdk8
+  - openjdk8
   - openjdk15
   
 script:
