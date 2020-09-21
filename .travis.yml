@@ -22,4 +22,4 @@ sudo: required
 
 script:
   - sudo apt-get update -y
-  - sudo apt-cache search adoptopenjdk
+  - sudo apt-cache search jdk
