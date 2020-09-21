@@ -6,10 +6,9 @@ sudo: required
 langauge: java
 
 jdk:
-  - openjdk8
-  - openjdk15
-  - orcalejdk8
-  - orcalejdk11
+  - openjdk11
+  - oraclejdk8
+  - oraclejdk11
   
 script:
   - sudo apt-get update -y
