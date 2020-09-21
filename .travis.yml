@@ -1,6 +1,16 @@
 jobs:
   include:
     - arch: amd64
+      dist: trusty
+    - arch: amd64
+      dist: xenial
+    - arch: amd64
+      dist: bionic
+    - arch: amd64
+      dist: focal
+    # power jobs  
+    - arch: ppc64le
+      dist: trusty
     - arch: ppc64le
       dist: xenial
     - arch: ppc64le
