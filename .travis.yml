@@ -7,8 +7,7 @@ langauge: java
 
 jdk:
   - jdk8
-  - openjdk11
-  - apdotopenjdk11
+  - openjdk15
   
 script:
   - sudo apt-get update -y
