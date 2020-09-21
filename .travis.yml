@@ -19,7 +19,12 @@ jobs:
       dist: focal
    
 sudo: required
+langauge: java
 
+jdk:
+  - jdk8
+  - openjdk11
+  - apdotopenjdk11
 script:
   - sudo apt-get update -y
   - sudo apt-cache search adoptopenjdk
