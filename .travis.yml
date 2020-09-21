@@ -19,7 +19,7 @@ jobs:
       dist: focal
    
 sudo: required
-
+language: java
 script:
   - sudo apt-get update -y
   - sudo apt-cache search adoptopenjdk
