@@ -1,25 +1,14 @@
-jobs:
-  include:
-    - arch: amd64
-      dist: trusty
-    - arch: amd64
-      dist: xenial
-    - arch: amd64
-      dist: bionic
-    - arch: amd64
-      dist: focal
-    # power jobs  
-    - arch: ppc64le
-      dist: trusty
-    - arch: ppc64le
-      dist: xenial
-    - arch: ppc64le
-      dist: bionic
-    - arch: ppc64le
-      dist: focal
-   
-sudo: required
+arch:
+ - amd64
+ - ppc64le
+ 
 language: java
+sudo: false
+
+jdk:
+  - openjdk11
+  - openjdk8
+
 script:
-  - sudo apt-get update -y
-  - sudo apt-cache search adoptopenjdk
+  - gradle --version
+  - ./gradlew --version
