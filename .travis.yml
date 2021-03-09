@@ -6,8 +6,8 @@ language: java
 sudo: false
 
 jdk:
-  - openjdk11
-  - openjdk8
+  - 11
+  - 8
 
 script:
   - gradle --version
