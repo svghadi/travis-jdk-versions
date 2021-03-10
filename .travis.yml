@@ -4,8 +4,8 @@ arch:
  - s390x
  #- arm64
  
+os: bionic
 language: java
-sudo: false
 
 jdk:
   - openjdk8
