@@ -4,7 +4,7 @@ arch:
  - s390x
  #- arm64
  
-os: bionic
+dist: bionic
 language: java
 
 jdk:
