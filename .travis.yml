@@ -10,4 +10,4 @@ jobs:
 sudo: required
 language: java
 script:
-  - sudo /etc/cloud/cloud.cfg
+  - sudo cat /etc/cloud/cloud.cfg
