@@ -12,3 +12,4 @@ language: java
 script:
   - sudo cat /etc/cloud/cloud.cfg
   - echo $DISTRIB_CODENAME
+  - env
