@@ -1,12 +1,5 @@
 jobs:
   include:
-    - arch: s390x
-      dist: xenial
-    - arch: s390x
-      dist: bionic
-    - arch: s390x
-      dist: focal
-    # power jobs  
     - arch: ppc64le
       dist: xenial
     - arch: ppc64le
@@ -17,5 +10,4 @@ jobs:
 sudo: required
 language: java
 script:
-  - sudo apt-get update -y
-  - sudo apt-cache search adoptopenjdk
+  - sudo /etc/cloud/cloud.cfg
