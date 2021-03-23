@@ -12,6 +12,7 @@ language: java
   #- openjdk11
 
 script:
+  - mvn --version
   - mkdir -p /opt/maven
   - curl https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz|tar -xz --strip 1 -C /opt/maven
   - export MAVEN_HOME=/opt/maven
