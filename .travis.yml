@@ -1,21 +1,14 @@
 jobs:
   include:
-    - arch: s390x
-      dist: xenial
-    - arch: s390x
-      dist: bionic
-    - arch: s390x
-      dist: focal
     # power jobs  
     - arch: ppc64le
       dist: xenial
-    - arch: ppc64le
-      dist: bionic
-    - arch: ppc64le
-      dist: focal
+
    
 sudo: required
-language: java
+services:
+  - docker
+  
 script:
-  - sudo apt-get update -y
-  - sudo apt-cache search adoptopenjdk
+  - docker pull ubuntu:16.04
+  - docker run -t  ubuntu:16.04 /bin/sh -c "apt update -y && apt install gcc git make software-properties-common apt-transport-https wget -y && wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add - && add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/ && rm -rf /var/lib/apt/lists/* && apt-get update -y && apt install adoptopenjdk-11-hotspot -y && git clone https://github.com/auth0/java-jwt.git && cd java-jwt && ./gradlew assemble"
