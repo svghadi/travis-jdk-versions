@@ -3,7 +3,6 @@ jobs:
     # power jobs  
     - arch: ppc64le
       dist: xenial
-      group: edge
 
 language: java
 jdk: openjdk8
