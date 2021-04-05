@@ -3,12 +3,10 @@ jobs:
     # power jobs  
     - arch: ppc64le
       dist: xenial
+      group: edge
 
-   
-sudo: required
-services:
-  - docker
-  
+language: java
+jdk: openjdk8
+
 script:
-  - docker pull ubuntu:16.04
-  - docker run -t  ubuntu:16.04 /bin/sh -c "apt update -y && apt install gcc git make software-properties-common apt-transport-https wget -y && wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add - && add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/ && rm -rf /var/lib/apt/lists/* && apt-get update -y && apt install adoptopenjdk-11-hotspot -y && git clone https://github.com/auth0/java-jwt.git && cd java-jwt && ./gradlew assemble"
+  - mvn --version
