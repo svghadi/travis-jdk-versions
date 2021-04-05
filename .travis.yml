@@ -3,6 +3,12 @@ jobs:
     # power jobs  
     - arch: ppc64le
       dist: xenial
+    - arch: ppc64le
+      dist: bionic
+    - arch: ppc64le
+      dist: focal
+    - arch: s390x
+      dist: bionic
 
 language: java
 jdk: openjdk8
