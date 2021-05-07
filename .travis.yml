@@ -3,13 +3,10 @@ jobs:
     # power jobs  
     - arch: ppc64le
       dist: xenial
-      group: edge
     - arch: ppc64le
       dist: bionic
-      group: edge
     - arch: ppc64le
       dist: focal
-      group: edge
 
 language: java
 jdk: openjdk15
