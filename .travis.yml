@@ -5,6 +5,7 @@ jobs:
       dist: bionic
   
 script:
+  - echo $JAVA_HOME
   - java -version
   - mvn --version
-  - ls -l /lib/jvm/
+  - ls -l /usr/lib/jvm/
