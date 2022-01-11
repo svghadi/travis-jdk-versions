@@ -12,5 +12,6 @@ language: java
 jdk: openjdk11
 
 script:
+  - env
   - java -version
   - mvn --version
