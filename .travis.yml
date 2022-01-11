@@ -9,7 +9,8 @@ jobs:
       dist: focal
 
 language: java
-jdk: 11
+jdk: openjdk11
 
 script:
+  - java -version
   - mvn --version
