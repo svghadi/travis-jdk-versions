@@ -9,7 +9,7 @@ jobs:
       dist: focal
 
 language: java
-jdk: openjdk11
+jdk: openjdk15
 
 script:
   - env
