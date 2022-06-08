@@ -1,6 +1,9 @@
 jobs:
   include:
-    # power jobs  
+    - arch: amd64
+      dist: bionic
+    - arch: s390x
+      dist: bionic
     - arch: ppc64le
       dist: xenial
     - arch: ppc64le
