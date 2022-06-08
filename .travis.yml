@@ -2,6 +2,8 @@ jobs:
   include:
     - arch: amd64
       dist: bionic
+    - arch: amd64
+      dist: focal
     - arch: s390x
       dist: bionic
     - arch: ppc64le
@@ -12,7 +14,7 @@ jobs:
       dist: focal
 
 language: java
-jdk: openjdk11
+jdk: openjdk8
 
 script:
   - java -version
