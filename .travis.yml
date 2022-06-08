@@ -1,7 +1,7 @@
 jobs:
   include:
     # power jobs  
-    - os: linux-ppc64le
+    - arch: ppc64le
       dist: xenial
     - arch: ppc64le
       dist: bionic
@@ -9,7 +9,7 @@ jobs:
       dist: focal
 
 language: java
-jdk: openjdk15
+jdk: openjdk11
 
 script:
   - env
